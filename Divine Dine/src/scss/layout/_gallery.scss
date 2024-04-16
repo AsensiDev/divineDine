@@ -1,0 +1,28 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+    gap: 10px;
+    position: relative;
+
+    @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .image {
+
+        transition: transform .4s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            filter: contrast(120%);
+        }
+
+        
+    }
+   
+}
+
+
+

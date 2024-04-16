@@ -1,0 +1,103 @@
+header {
+    background-color: white;
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, .5);
+    height: auto;
+}
+
+.container  {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-left {
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        h1 {
+            font-size: 50px;
+            font-family: $logoFont;
+            color: $golden;
+        }
+
+        #moon {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            display: none;
+
+            @include tablet {
+                display: block;
+            }
+        }
+    }
+    
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    @include tablet {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $black;
+        text-transform: uppercase;
+        font-family: $mainFont;
+        font-weight: bold;
+        transition: color .4s ease;
+
+        &:hover {
+            color: $golden;
+        }
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 30px;
+        cursor: pointer;
+        gap: 10px;
+        transition: background-color .4s ease;
+        margin-bottom: 20px;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
+
+        img {
+            width: 30px;
+        }
+
+        a {
+            &:hover {
+                color: $black;
+            }
+        }
+        &:hover {
+            background-color: $gray;
+        
+        }
+    }
+}
+
+
+
+
+
