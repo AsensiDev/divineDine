@@ -1,5 +1,4 @@
 html {
-  font-size: 62.5%;
   box-sizing: border-box;
 }
 
@@ -10,18 +9,18 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 16px;
   line-height: 1.8;
 }
 
 p {
   color: #0b0c0d;
-  font-size: 2rem;
+  font-size: 20px;
 }
 
 .container {
   width: 95%;
-  max-width: 120rem;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -156,4 +155,62 @@ header {
 .gallery .image:hover {
   transform: translateY(-5px);
   filter: contrast(120%);
+}
+
+.about-container {
+  width: 100%;
+  background-color: #0b0c0d;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .about-information {
+    display: flex;
+    align-items: center;
+  }
+}
+.about-information .about-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+}
+.about-information .about-text h3, .about-information .about-text h2 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+.about-information .about-text h3 {
+  padding-top: 20px;
+  font-weight: 400;
+}
+.about-information .about-text h2 {
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+.about-information .about-text p {
+  color: #fff;
+  font-size: 18px;
+  width: 90%;
+  text-align: center;
+  padding-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .about-information .about-text p {
+    width: 70%;
+  }
+}
+.about-information .about-image {
+  width: 400px;
+  padding: 10px;
+}
+.about-information .about-image img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .about-information .about-image img {
+    width: 400px;
+  }
 }/*# sourceMappingURL=app.css.map */

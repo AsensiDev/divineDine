@@ -1,0 +1,65 @@
+.about-container {
+    width: 100%;
+    background-color: $black;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.about-information {
+
+    @include tablet {
+        display: flex;
+        align-items: center;
+    }
+
+    .about-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 400px;
+
+        h3, h2 {
+            color: $white;
+            font-family: $mainFont;
+        }
+        h3 {  
+            padding-top: 20px;
+            font-weight: 400;
+        }
+
+        h2 {
+            margin-top: -15px ;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: $white;
+            font-size: 18px;
+            width: 90%;
+            text-align: center;
+            padding-bottom: 15px;
+
+            @include tablet {
+                width: 70%;
+            }
+        }
+    }
+
+    .about-image {
+        width: 400px;
+        padding: 10px;
+        
+        img {
+            width: 100%;
+            @include tablet {
+                width: 400px;
+                
+            }
+        }
+    }
+        
+    
+
+}
