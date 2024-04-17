@@ -5,19 +5,23 @@
     display: flex;
     justify-content: center;
     height: auto;
+
+    
 }
 
 .about-information {
-
+    flex-wrap: wrap;
     @include tablet {
         display: flex;
         align-items: center;
+        padding: 30px;
     }
 
     .about-text {
         display: flex;
         align-items: center;
         flex-direction: column;
+        flex-wrap: wrap;
         width: 400px;
 
         h3, h2 {
@@ -27,11 +31,13 @@
         h3 {  
             padding-top: 20px;
             font-weight: 400;
+            color: $golden;
         }
 
         h2 {
             margin-top: -15px ;
             margin-bottom: 15px;
+            color: $cremaOscuro;
         }
 
         p {
@@ -47,18 +53,7 @@
         }
     }
 
-    .about-image {
-        width: 400px;
-        padding: 10px;
-        
-        img {
-            width: 100%;
-            @include tablet {
-                width: 400px;
-                
-            }
-        }
-    }
+    
         
     
 

@@ -166,16 +166,21 @@ header {
   height: auto;
 }
 
+.about-information {
+  flex-wrap: wrap;
+}
 @media (min-width: 768px) {
   .about-information {
     display: flex;
     align-items: center;
+    padding: 30px;
   }
 }
 .about-information .about-text {
   display: flex;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 400px;
 }
 .about-information .about-text h3, .about-information .about-text h2 {
@@ -185,10 +190,12 @@ header {
 .about-information .about-text h3 {
   padding-top: 20px;
   font-weight: 400;
+  color: #bc8d4b;
 }
 .about-information .about-text h2 {
   margin-top: -15px;
   margin-bottom: 15px;
+  color: #eeeae1;
 }
 .about-information .about-text p {
   color: #fff;
@@ -200,17 +207,5 @@ header {
 @media (min-width: 768px) {
   .about-information .about-text p {
     width: 70%;
-  }
-}
-.about-information .about-image {
-  width: 400px;
-  padding: 10px;
-}
-.about-information .about-image img {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .about-information .about-image img {
-    width: 400px;
   }
 }/*# sourceMappingURL=app.css.map */
