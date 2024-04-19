@@ -1,0 +1,104 @@
+.private-container {
+    height: auto;
+    background-color: $black;
+    margin-top: 50px;
+    padding: 20px;
+
+    @include tablet {
+        margin-top: 25px;
+    }
+
+    
+
+    .private-info {
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            flex-direction: row;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+            justify-content: space-around;
+        }
+    }
+}
+
+.private-text {
+    text-align: center;
+
+    @include tablet {
+        max-width: 500px;
+    }
+
+    h2 {
+        color: $white;
+        font-family: $logoFont;
+        font-size: 35px;
+    }
+
+    p {
+        color: $white;
+        font-size: 18px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.private-form {
+    width: 90%;
+    margin: 0 auto;
+
+    @include tablet {
+        max-width: 500px;
+        margin: 0;
+    }
+    form {
+        border: 1px solid $golden;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        gap: 10px;
+        margin-top: 30px;
+
+        @include tablet {
+            margin-top: 0;
+        }
+        
+
+        h2 {
+            color: $white;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        label, input, textarea {
+            width: 90%;
+            margin: 0 auto;
+        }
+        label {
+            color: $white;
+        }
+
+        input, textarea {
+            background-color: $gray;
+        }
+
+        input {
+            padding: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            margin-top: 20px;
+            background-color: $white;
+            border: 1px solid $white;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $black;
+                color: $white;
+                transition: .4s ease;
+            }
+        }
+    }
+}

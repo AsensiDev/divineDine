@@ -217,14 +217,20 @@ header {
 .menu .menu-container {
   width: 90%;
   margin: 0 auto;
+  text-align: center;
 }
 .menu .menu-container picture {
-  display: flex;
-  justify-content: center;
-  width: 700px;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .menu .menu-container picture {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+  }
 }
 .menu .menu-container picture img {
-  width: 90%;
+  margin-left: 20px;
 }
 @media (min-width: 768px) {
   .menu .menu-container picture img {
@@ -279,4 +285,103 @@ header {
   background-color: #fff;
   color: #0b0c0d;
   transition: 0.4s;
+}
+
+.private-container {
+  height: auto;
+  background-color: #0b0c0d;
+  margin-top: 50px;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .private-container {
+    margin-top: 25px;
+  }
+}
+.private-container .private-info {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .private-container .private-info {
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+}
+
+.private-text {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .private-text {
+    max-width: 500px;
+  }
+}
+.private-text h2 {
+  color: #fff;
+  font-family: "Whisper", cursive;
+  font-size: 35px;
+}
+.private-text p {
+  color: #fff;
+  font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.private-form {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .private-form {
+    max-width: 500px;
+    margin: 0;
+  }
+}
+.private-form form {
+  border: 1px solid #bc8d4b;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  gap: 10px;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .private-form form {
+    margin-top: 0;
+  }
+}
+.private-form form h2 {
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.private-form form label, .private-form form input, .private-form form textarea {
+  width: 90%;
+  margin: 0 auto;
+}
+.private-form form label {
+  color: #fff;
+}
+.private-form form input, .private-form form textarea {
+  background-color: #D5D5D5;
+}
+.private-form form input {
+  padding: 10px;
+}
+.private-form form input[type=submit] {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.private-form form input[type=submit]:hover {
+  background-color: #0b0c0d;
+  color: #fff;
+  transition: 0.4s ease;
 }/*# sourceMappingURL=app.css.map */

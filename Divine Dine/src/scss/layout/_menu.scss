@@ -5,16 +5,20 @@
     .menu-container {
         width: 90%;
         margin: 0 auto;
+        text-align: center;
 
         picture {
-            display: flex;
-            justify-content: center;
-            width: 700px;
+            width: 90%;
+    
+            @include tablet {
+                display: flex;
+                justify-content: center;
+                width: 700px;
+            }
 
             img {
-                width: 90%;
-                
-    
+                margin-left: 20px;
+                   
                 @include tablet {
                     max-width: 600px;
                 }
@@ -27,8 +31,7 @@
             align-items: center;
             width: 80%;
             margin: 0 auto;
-        }
-        
+        }        
     }
 }
 
