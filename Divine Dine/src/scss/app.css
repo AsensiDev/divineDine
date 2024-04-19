@@ -208,4 +208,75 @@ header {
   .about-information .about-text p {
     width: 70%;
   }
+}
+
+.menu {
+  margin-top: 20px;
+  align-items: center;
+}
+.menu .menu-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.menu .menu-container picture {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+}
+.menu .menu-container picture img {
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .menu .menu-container picture img {
+    max-width: 600px;
+  }
+}
+@media (min-width: 768px) {
+  .menu .menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.menu-info {
+  text-align: center;
+}
+.menu-info h2 {
+  font-family: "Whisper", cursive;
+  color: #bc8d4b;
+  font-size: 35px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .menu-info h2 {
+    font-size: 55px;
+    margin-right: 20px;
+  }
+}
+.menu-info p {
+  font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .menu-info p {
+    margin-bottom: 20px;
+  }
+}
+.menu-info a {
+  background-color: #0b0c0d;
+  padding: 20px;
+  color: #fff;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+.menu-info a:hover {
+  background-color: #fff;
+  color: #0b0c0d;
+  transition: 0.4s;
 }/*# sourceMappingURL=app.css.map */
