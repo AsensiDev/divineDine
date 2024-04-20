@@ -35,6 +35,10 @@
         color: $white;
         font-family: $logoFont;
         font-size: 35px;
+
+        @include tablet {
+            font-size: 55px;
+        }
     }
 
     p {
@@ -54,7 +58,7 @@
         margin: 0;
     }
     form {
-        border: 1px solid $golden;
+        box-shadow: 0 0 20px $gray;
         display: flex;
         flex-direction: column;
         padding-bottom: 20px;
@@ -62,7 +66,9 @@
         margin-top: 30px;
 
         @include tablet {
-            margin-top: 0;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 30px $gray;
         }
         
 
@@ -70,6 +76,7 @@
             color: $white;
             margin: 0 auto;
             margin-top: 10px;
+            font-family: $mainFont;
         }
         label, input, textarea {
             width: 90%;
@@ -87,6 +94,10 @@
             padding: 10px;
         }
 
+        textarea {
+            max-width: 90%;
+        }
+
         input[type="submit"] {
             padding: 10px;
             margin-top: 20px;
@@ -102,3 +113,4 @@
         }
     }
 }
+

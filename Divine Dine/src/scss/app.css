@@ -63,17 +63,6 @@ header {
   font-family: "Whisper", cursive;
   color: #bc8d4b;
 }
-.container .header-left #moon {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  display: none;
-}
-@media (min-width: 768px) {
-  .container .header-left #moon {
-    display: block;
-  }
-}
 
 .navbar {
   display: flex;
@@ -325,6 +314,11 @@ header {
   font-family: "Whisper", cursive;
   font-size: 35px;
 }
+@media (min-width: 768px) {
+  .private-text h2 {
+    font-size: 55px;
+  }
+}
 .private-text p {
   color: #fff;
   font-size: 18px;
@@ -343,7 +337,7 @@ header {
   }
 }
 .private-form form {
-  border: 1px solid #bc8d4b;
+  box-shadow: 0 0 20px #D5D5D5;
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
@@ -352,13 +346,16 @@ header {
 }
 @media (min-width: 768px) {
   .private-form form {
-    margin-top: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 30px #D5D5D5;
   }
 }
 .private-form form h2 {
   color: #fff;
   margin: 0 auto;
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 .private-form form label, .private-form form input, .private-form form textarea {
   width: 90%;
@@ -373,6 +370,9 @@ header {
 .private-form form input {
   padding: 10px;
 }
+.private-form form textarea {
+  max-width: 90%;
+}
 .private-form form input[type=submit] {
   padding: 10px;
   margin-top: 20px;
@@ -384,4 +384,39 @@ header {
   background-color: #0b0c0d;
   color: #fff;
   transition: 0.4s ease;
+}
+
+.footer-container {
+  background-color: #0b0c0d;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+.footer-container .footer-info {
+  width: 90%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer-container .footer-info {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+  }
+}
+.footer-container .footer-info .logo {
+  color: #bc8d4b;
+  font-family: "Whisper", cursive;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.contact {
+  text-align: center;
+}
+.contact p {
+  color: #fff;
+}
+.contact p span {
+  color: #bc8d4b;
 }/*# sourceMappingURL=app.css.map */

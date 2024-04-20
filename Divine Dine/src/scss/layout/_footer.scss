@@ -1,0 +1,35 @@
+.footer-container {
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+
+    .footer-info {
+        width: 90%;
+        text-align: center;
+
+        @include tablet {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            gap: 250px;
+        }
+
+        .logo {
+            color: $golden;
+            font-family: $logoFont;
+            cursor: pointer;
+            font-size: 40px;
+        }
+    }
+}
+
+.contact {
+    text-align: center;
+    p {
+        color: $white;
+        span {
+            color: $golden;
+        }
+    }
+}

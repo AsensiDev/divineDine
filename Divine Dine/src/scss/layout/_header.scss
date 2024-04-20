@@ -28,19 +28,7 @@ header {
             font-family: $logoFont;
             color: $golden;
         }
-
-        #moon {
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-            display: none;
-
-            @include tablet {
-                display: block;
-            }
-        }
-    }
-    
+    }   
 }
 
 .navbar {
