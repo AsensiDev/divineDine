@@ -87,7 +87,7 @@ header {
 .navbar a:hover {
   color: #bc8d4b;
 }
-.navbar button {
+.navbar a button {
   display: flex;
   align-items: center;
   padding: 10px 20px;
@@ -98,17 +98,17 @@ header {
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  .navbar button {
+  .navbar a button {
     margin-bottom: 0;
   }
 }
-.navbar button img {
+.navbar a button img {
   width: 30px;
 }
-.navbar button a:hover {
+.navbar a button a:hover {
   color: #0b0c0d;
 }
-.navbar button:hover {
+.navbar a button:hover {
   background-color: #D5D5D5;
 }
 
