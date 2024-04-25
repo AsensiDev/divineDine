@@ -40,7 +40,12 @@ $enlace = mysqli_connect ($server,$user,$password,$db);
                         <img src="src/img/whatsapp.ico" alt="">
                         Book Now
                     </button>
-                </a>              
+                </a>
+
+                <!-- <button>
+                    <img src="src/img/whatsapp.ico" alt="">
+                    <a href="https://api.whatsapp.com/send?phone=618440793" target="_blank">Book Now</a>
+                </button>                 -->
             </nav>
         </div>  
     </header>
