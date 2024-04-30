@@ -7,6 +7,7 @@ $db = "users";
 
 $enlace = mysqli_connect ($server,$user,$password,$db);
   
+
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +22,7 @@ $enlace = mysqli_connect ($server,$user,$password,$db);
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
-    <!-- swiper -->
+    <!-- swiper.js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>   
@@ -37,15 +38,10 @@ $enlace = mysqli_connect ($server,$user,$password,$db);
                 <a href="#private">Private Rooms</a>
                 <a href="https://api.whatsapp.com/send?phone=618440793" target="_blank">
                     <button>
-                        <img src="src/img/whatsapp.ico" alt="">
+                        <img src="src/img/whatsapp.ico" alt="whatsapp icon">
                         Book Now
                     </button>
                 </a>
-
-                <!-- <button>
-                    <img src="src/img/whatsapp.ico" alt="">
-                    <a href="https://api.whatsapp.com/send?phone=618440793" target="_blank">Book Now</a>
-                </button>                 -->
             </nav>
         </div>  
     </header>
@@ -58,21 +54,21 @@ $enlace = mysqli_connect ($server,$user,$password,$db);
                     <picture>
                         <source srcset="src/img/slider1.webp" type="image/webp">
                         <source srcset="src/img/slider1.jpg" type="image/jpeg">
-                        <img src="src/img/slider1.jpg" alt="">
+                        <img src="src/img/slider1.jpg" alt="waiter serving wine" loading="lazy">
                     </picture>
                 </div>    
                 <div class="box swiper-slide">
                     <picture>
                         <source srcset="src/img/slider.webp" type="image/webp">
                         <source srcset="src/img/slider.jpg" type="image/jpeg">
-                        <img src="src/img/slider2.jpg" alt="">
+                        <img src="src/img/slider2.jpg" alt="restaurant with dim lights" loading="lazy">
                     </picture>
                 </div>    
                 <div class="box swiper-slide">
                     <picture>
                         <source srcset="src/img/slider3.webp" type="image/webp">
                         <source srcset="src/img/slider3.jpg" type="image/jpeg">
-                        <img src="src/img/slider3.jpg" alt="">
+                        <img src="src/img/slider3.jpg" alt="drinks selection" loading="lazy">
                     </picture>
                 </div>    
             </div>    
@@ -87,42 +83,42 @@ $enlace = mysqli_connect ($server,$user,$password,$db);
                 <picture>
                     <source srcset="src/img/gallery1.webp" type="image/webp">
                     <source srcset="src/img/gallery1.jpg" type="image/jpeg">
-                    <img src="src/img/gallery1.jpg" alt="">
+                    <img src="src/img/gallery1.jpg" alt="strawberry and chocolate dessert" loading="lazy">
                 </picture>
             </div>
             <div class="image">
                 <picture>
                     <source srcset="src/img/gallery2.webp" type="image/webp">
                     <source srcset="src/img/gallery2.jpg" type="image/jpeg">
-                    <img src="src/img/gallery2.jpg" alt="">
+                    <img src="src/img/gallery2.jpg" alt="varied sushi plate" loading="lazy">
                 </picture>
             </div>
             <div class="image">
                 <picture>
                     <source srcset="src/img/gallery3.webp" type="image/webp">
                     <source srcset="src/img/gallery3.jpg" type="image/jpeg">
-                    <img src="src/img/gallery3.jpg" alt="">
+                    <img src="src/img/gallery3.jpg" alt="rice with salad and beans" loading="lazy">
                 </picture>
             </div>
             <div class="image">
                 <picture>
                     <source srcset="src/img/gallery4.webp" type="image/webp">
                     <source srcset="src/img/gallery4.jpg" type="image/jpeg">
-                    <img src="src/img/gallery4.jpg" alt="">
+                    <img src="src/img/gallery4.jpg" alt="varied and fresh salad" loading="lazy">
                 </picture>
             </div>
             <div class="image">
                 <picture>
                     <source srcset="src/img/gallery5.webp" type="image/webp">
                     <source srcset="src/img/gallery5.jpg" type="image/jpeg">
-                    <img src="src/img/gallery5.jpg" alt="">
+                    <img src="src/img/gallery5.jpg" alt="crispy chicken with potatoes" loading="lazy">
                 </picture>
             </div>
             <div class="image">
                 <picture>
                     <source srcset="src/img/gallery6.webp" type="image/webp">
                     <source srcset="src/img/gallery6.jpg" type="image/jpeg">
-                    <img src="src/img/gallery6.jpg" alt="">
+                    <img src="src/img/gallery6.jpg" alt="spaghetti with chicken wings" loading="lazy">
                 </picture>
             </div>           
     </section>
@@ -156,7 +152,7 @@ $enlace = mysqli_connect ($server,$user,$password,$db);
             <picture>
                 <source srcset="src/img/menu.webp" type="image/webp">
                 <source srcset="src/img/menu.png" type="image/png">
-                <img src="src/img/menu.png" alt="">
+                <img src="src/img/menu.png" alt="fish dish with asparagus" loading="lazy">
             </picture>
             <div class="menu-info">
                 <h2>Exclusive Gourmet Menu</h2>
@@ -189,7 +185,7 @@ $enlace = mysqli_connect ($server,$user,$password,$db);
                         <input type="email" name="correo" placeholder="correo">
 
                         <label for="message">Number:</label>
-                        <input type="text" name="telefono" placeholder="message">    
+                        <input type="number" name="telefono" placeholder="number">    
 
                         <input type="submit" name="registro">
                     </form>
